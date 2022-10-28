@@ -55,11 +55,122 @@ table {
 
 body {
     background-color: #AAD4CF;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto";
 }
 
 .container {
-    width: 1025px;
+	position: relative;
+    width: 1024px;
     background-color: #D4E9E7;
     margin: 0 auto;
+}
+
+header img {
+	top: 0;
+}
+
+header .container h1 {
+	position: absolute;
+	top: 57.5%;
+	width: 100%;
+	text-align: center;
+	font-size: 4.0rem;
+	color: white;
+}
+
+.nagivation {
+	width: 100%;
+	overflow: auto;
+}
+
+.navigation li {
+	position: relative;
+	display: inline-block;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 1.67rem;
+	width: 32.7%;
+	text-align: center;
+	border-right: 1px solid black; 
+}
+
+.navigation li:last-of-type {
+	border-right: none;
+}
+
+.navigation li a {
+	text-decoration: none;
+	color: black;
+}
+
+.navigation a:link {
+	color: black;
+}
+
+.navigation a:hover {
+	color: gray;
+}
+
+.navigation a:active {
+	color: white;
+}
+
+@media screen and (max-width: 500px) {
+	.navigation li a {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+h2 {
+	font-weight: bold;
+	font-size: 2rem;
+	padding: 32px;
+	padding-top: 48px;
+	padding-bottom: 24px;
+}
+
+p {
+	font-size: 1rem;
+	padding: 32px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	line-height: 1.85;
+}
+
+article .container img {
+	width: 300px;
+	float: left;
+	padding: 32px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#facts {
+	font-size: 1rem;
+	padding: 32px;
+	padding-left: 64px;
+	padding-top: 0px;
+	padding-bottom: 24px;
+	line-height: 1.85;
+	list-style-type: none;
+}
+
+#facts li::before {
+	content: "\2022";
+	color: black; 
+	font-weight: bold; 
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+#footertext {
+	text-align: right;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 48px;
 }
