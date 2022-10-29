@@ -132,11 +132,18 @@ h2 {
 	padding-bottom: 24px;
 }
 
-p {
-	font-size: 1rem;
+h3 {
+	font-weight: normal;
+	font-size: 1.5rem;
+	padding: 32px;
+	padding-top: 48px;
+}
+
+p, #facts{
+	font-size: 1.1rem;
 	padding: 32px;
 	padding-top: 0px;
-	padding-bottom: 0px;
+	padding-bottom: 24px;
 	line-height: 1.85;
 }
 
@@ -149,12 +156,6 @@ article .container img {
 }
 
 #facts {
-	font-size: 1rem;
-	padding: 32px;
-	padding-left: 64px;
-	padding-top: 0px;
-	padding-bottom: 24px;
-	line-height: 1.85;
 	list-style-type: none;
 }
 
@@ -164,7 +165,71 @@ article .container img {
 	font-weight: bold; 
 	display: inline-block;
 	width: 1em;
-	margin-left: -1em;
+	margin-left: 1.75em;
+}
+
+.contactborder {
+	position: relative;
+    width: 958px;
+    background-color: none;
+	border: 1px solid black;
+
+    margin: 0 auto;
+	padding-top: 16px;
+	padding-bottom: 32px;
+}
+
+input[type=text], input[type=email], #yourmessage {
+	width: 93.25%;
+	height: 50px;  
+	padding: 12px 20px;
+	font-size: 1.1rem;
+	margin: 0 auto;
+	border: 1px solid lightgray;
+	box-sizing: border-box;
+
+	display: flex;
+	justify-content: center;
+}
+
+#yourmessage {
+	height: 200px;
+	resize: none;
+	font-family: "Roboto";
+	border: 1px solid gray;
+  }
+
+form-title {
+	padding-left: 36px;
+	padding-right: 56px;
+	line-height: 1.5;
+	font-size: 1.1rem;;
+}
+
+#yes {
+	margin-left: 32px;
+}
+
+input[type=submit] {
+	background-color: #D4E9E7;
+	text-align:center;
+	color: black;
+	padding: 12px 16px;
+	border: 1px solid black;
+	margin-top: 32px;
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	border: 1px solid grey;
+	color: grey;
+
+}
+
+input[type=submit]:active {
+	border: 1px solid white;
+	color: white;
 }
 
 #footertext {
