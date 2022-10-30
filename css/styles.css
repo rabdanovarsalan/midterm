@@ -162,7 +162,6 @@ article .container img { /* Text should smoothly wrap the image */
 .contactborder { /* Shrouds the inputs and send button */
 	position: relative;
     width: 958px;
-    background-color: none;
 	border: 1px solid black;
 
     margin: 0 auto;
