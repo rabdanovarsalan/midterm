@@ -51,25 +51,23 @@ table {
       MY STYLES 
 ================= */
 
-
-
-body {
+body { /* Colorize the general background */
     background-color: #AAD4CF;
     font-family: "Roboto";
 }
 
-.container {
+.container { /* Containers have lighter color. Stay centered relative to the header */
 	position: relative;
     width: 1024px;
     background-color: #D4E9E7;
     margin: 0 auto;
 }
 
-header img {
+header img { 
 	top: 0;
 }
 
-header .container h1 {
+header h1 { /* The title is visible before the wide image */
 	position: absolute;
 	top: 57.5%;
 	width: 100%;
@@ -78,12 +76,12 @@ header .container h1 {
 	color: white;
 }
 
-.nagivation {
+.nagivation { 
 	width: 100%;
 	overflow: auto;
 }
 
-.navigation li {
+.navigation li { /* semi-clickable navigation stuff */
 	position: relative;
 	display: inline-block;
 	padding-top: 12px;
@@ -98,12 +96,8 @@ header .container h1 {
 	border-right: none;
 }
 
-.navigation li a {
+.navigation li a, a:link {
 	text-decoration: none;
-	color: black;
-}
-
-.navigation a:link {
 	color: black;
 }
 
@@ -140,14 +134,15 @@ h3 {
 }
 
 p, #facts{
-	font-size: 1.1rem;
+	font-size: 1.0rem;
 	padding: 32px;
 	padding-top: 0px;
 	padding-bottom: 24px;
 	line-height: 1.85;
+	list-style-type: none;
 }
 
-article .container img {
+article .container img { /* Text should smoothly wrap the image */ 
 	width: 300px;
 	float: left;
 	padding: 32px;
@@ -155,11 +150,7 @@ article .container img {
 	padding-bottom: 0px;
 }
 
-#facts {
-	list-style-type: none;
-}
-
-#facts li::before {
+#facts li::before { /* Custom bullets implemented cause idk how to use standard black bullets*/
 	content: "\2022";
 	color: black; 
 	font-weight: bold; 
@@ -168,7 +159,7 @@ article .container img {
 	margin-left: 1.75em;
 }
 
-.contactborder {
+.contactborder { /* Shrouds the inputs and send button */
 	position: relative;
     width: 958px;
     background-color: none;
@@ -180,10 +171,10 @@ article .container img {
 }
 
 input[type=text], input[type=email], #yourmessage {
-	width: 93.25%;
+	width: 93.55%;
 	height: 50px;  
 	padding: 12px 20px;
-	font-size: 1.1rem;
+	font-size: 1.0rem;
 	margin: 0 auto;
 	border: 1px solid lightgray;
 	box-sizing: border-box;
@@ -199,18 +190,19 @@ input[type=text], input[type=email], #yourmessage {
 	border: 1px solid gray;
   }
 
-form-title {
+form-title { /* Custom tag made purely for titling form names */
 	padding-left: 36px;
 	padding-right: 56px;
 	line-height: 1.5;
 	font-size: 1.1rem;;
 }
 
-#yes {
+#yes { /* Pushes 'yes' radio button away from the left border of the contactborder */
 	margin-left: 32px;
 }
 
 input[type=submit] {
+	display: block;
 	background-color: #D4E9E7;
 	text-align:center;
 	color: black;
